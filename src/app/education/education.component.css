@@ -42,18 +42,6 @@
     color: #6a1b9a;
   }
 
-  /* Flexbox para organizar las columnas */
-  .content {
-    display: flex;
-    justify-content: space-between; /* Divide las columnas en dos partes */
-    padding: 20px;
-  }
-  
-  /* Para el otro componente */
-  .another-component {
-    width: 48%; /* También ocupa la mitad del ancho */
-  }
-  
   /* Responsivo para pantallas pequeñas */
   @media (max-width: 768px) {
     .content {
