@@ -27,6 +27,10 @@
     padding-left: 10px; /* Espacio izquierdo para que no se junten */
   }
   
+  .education-section {
+    margin-top: 30px; /* Espacio entre work experience y education */
+  }
+  
   /* Para pantallas más pequeñas */
   @media (max-width: 768px) {
     .content {
