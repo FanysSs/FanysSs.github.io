@@ -1,0 +1,42 @@
+/* Contenedor principal */
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Flexbox para dividir el espacio en dos columnas */
+  .content {
+    display: flex;
+    justify-content: space-between; /* Divide en dos partes iguales */
+    padding: 20px;
+  }
+  
+  /* Ajuste para la mitad del ancho */
+  .work-experience-container,
+  .skills-container {
+    width: 48%; /* Ajusta para que ocupen la mitad cada uno, dejando espacio entre ellos */
+  }
+  
+  /* Estilo para la caja de work experience */
+  .work-experience-container {
+    padding-right: 10px; /* Espacio derecho para que no se junten */
+  }
+  
+  /* Estilo para la caja de skills */
+  .skills-container {
+    padding-left: 10px; /* Espacio izquierdo para que no se junten */
+  }
+  
+  /* Para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
+    }
+  
+    .work-experience-container,
+    .skills-container {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      padding: 0;
+    }
+  }
+  
