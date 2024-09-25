@@ -7,8 +7,11 @@
   /* Flexbox para dividir el espacio en dos columnas */
   .content {
     display: flex;
-    justify-content: space-between; /* Divide en dos partes iguales */
-    padding: 20px;
+    justify-content: space-evenly; /* Distribuye el espacio de forma más uniforme */
+    align-items: flex-start; /* Alinea los componentes en la parte superior */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
   }
   
   /* Ajuste para la mitad del ancho */
@@ -26,10 +29,24 @@
   .skills-container {
     padding-left: 10px; /* Espacio izquierdo para que no se junten */
   }
-  
-  .education-section {
-    margin-top: 30px; /* Espacio entre work experience y education */
+
+  .education-container, achievements-container {
+    width: 48%; /* Ajusta para que ocupen la mitad cada uno, dejando espacio entre ellos */
   }
+/* Ajustes para el contenedor Education */
+  .education-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-right: 10px; /* Añade espacio entre los componentes */
+}
+
+/* Ajustes para el contenedor Achievements */
+  .achievements-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-left: 10px; /* Añade espacio entre los componentes */
+}
+
+  
+
   
   /* Para pantallas más pequeñas */
   @media (max-width: 768px) {

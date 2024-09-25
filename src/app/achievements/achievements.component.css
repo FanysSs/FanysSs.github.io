@@ -1,0 +1,44 @@
+/* Contenedor principal */
+.achievements-container {
+    width: 70%; /* Ocupa un 70% del ancho, ajústalo si es necesario */
+    margin: 20px auto;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f48fb1; /* Borde rosa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover */
+  .achievements-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Título de la sección */
+  .achievements-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d81b60; /* Color rosa */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Elementos individuales de logros */
+  .achievement-item {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fce4ec; /* Fondo rosa claro */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto hover para los logros */
+  .achievement-item:hover {
+    background-color: #f06292; /* Cambia a un rosa más fuerte */
+    color: white;
+  }
+  
