@@ -37,6 +37,7 @@
   .education-container {
   width: 48%; /* Ajusta el ancho */
   margin-right: 10px; /* Añade espacio entre los componentes */
+  margin-top: 50px;
 }
 
 /* Ajustes para el contenedor Achievements */
@@ -45,8 +46,15 @@
   margin-left: 10px; /* Añade espacio entre los componentes */
 }
 
-  
+.languages-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-right: 10px; /* Añade espacio entre los componentes */
+}
 
+.interests-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-left: 10px; /* Añade espacio entre los componentes */
+}
   
   /* Para pantallas más pequeñas */
   @media (max-width: 768px) {
@@ -59,5 +67,6 @@
       width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
       padding: 0;
     }
+    
   }
   
