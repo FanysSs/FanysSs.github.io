@@ -1,0 +1,72 @@
+/* Contenedor principal */
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Flexbox para dividir el espacio en dos columnas */
+  .content {
+    display: flex;
+    justify-content: space-evenly; /* Distribuye el espacio de forma más uniforme */
+    align-items: flex-start; /* Alinea los componentes en la parte superior */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  }
+  
+  /* Ajuste para la mitad del ancho */
+  .work-experience-container,
+  .skills-container {
+    width: 48%; /* Ajusta para que ocupen la mitad cada uno, dejando espacio entre ellos */
+  }
+  
+  /* Estilo para la caja de work experience */
+  .work-experience-container {
+    padding-right: 10px; /* Espacio derecho para que no se junten */
+  }
+  
+  /* Estilo para la caja de skills */
+  .skills-container {
+    padding-left: 10px; /* Espacio izquierdo para que no se junten */
+  }
+
+  .education-container, achievements-container {
+    width: 48%; /* Ajusta para que ocupen la mitad cada uno, dejando espacio entre ellos */
+  }
+/* Ajustes para el contenedor Education */
+  .education-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-right: 10px; /* Añade espacio entre los componentes */
+  margin-top: 50px;
+}
+
+/* Ajustes para el contenedor Achievements */
+  .achievements-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-left: 10px; /* Añade espacio entre los componentes */
+}
+
+.languages-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-right: 10px; /* Añade espacio entre los componentes */
+}
+
+.interests-container {
+  width: 48%; /* Ajusta el ancho */
+  margin-left: 10px; /* Añade espacio entre los componentes */
+}
+  
+  /* Para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Cambia a una columna para pantallas pequeñas */
+    }
+  
+    .work-experience-container,
+    .skills-container {
+      width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+      padding: 0;
+    }
+    
+  }
+  

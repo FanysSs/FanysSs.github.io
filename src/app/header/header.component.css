@@ -1,0 +1,157 @@
+/* Animación de fondo con gradiente */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+ /* Contenedor principal */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    background: linear-gradient(270deg, #fce4ec, #f8bbd0, #f48fb1);
+    background-size: 600% 600%;
+    animation: backgroundAnimation 10s ease infinite;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative; /* Añadir posición relativa para el centrado */
+  }
+  
+  /* Sección de información */
+  .info-section {
+    max-width: 40%;
+  }
+  
+  .name {
+    font-size: 40px; /* Un tamaño ligeramente más pequeño para compactarlo */
+    font-weight: bold;
+    color: #d81b60;
+    text-align: left; /* Alineado a la izquierda para un aspecto limpio */
+    margin-bottom: 5px; /* Reducir el espacio entre los elementos */
+    letter-spacing: 0.5px; /* Añadir un pequeño espacio entre letras para legibilidad */
+  }
+  
+  .title {
+    font-size: 24px; /* Un poco más pequeño y negrita */
+    font-weight: bold;
+    color: #e8409f;
+    margin-top: 0; /* Reducir espacio vertical */
+    margin-bottom: 5px; /* Reducir el espacio entre los elementos */
+    letter-spacing: 0.4px; /* Espacio entre letras para legibilidad */
+  }
+  
+  .goal {
+    font-size: 20px; /* Reducir el tamaño para hacerlo más compacto */
+    color: #6a1b9a;
+    font-style: italic;
+    text-align: left;
+    margin: 0; /* Eliminar márgenes para hacerlo más compacto */
+    font-weight: 500; /* Un poco más de peso para que sea más visible */
+    letter-spacing: 0.3px; /* Ligero espaciado entre letras */
+  }
+  
+  /* Estilo de la imagen */
+  .image-section {
+    flex-shrink: 0; /* Evita que la imagen se reduzca o expanda por el espacio disponible */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: absolute; /* Fijar la posición de la imagen */
+    left: 50%; /* Mover la imagen al centro */
+    transform: translateX(-50%); /* Ajustar la imagen para que quede exactamente centrada */
+  }
+
+  .image-section img {
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto;
+  border: 10px solid white;
+}
+
+.image-section img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+  
+  /* Sección de información a la izquierda */
+.info-section {
+    max-width: 40%;
+    padding-right: 20px; /* Asegura espacio con la imagen */
+  }
+  
+  /* Sección de contacto a la derecha */
+  .contact-section {
+    max-width: 40%;
+    padding-left: 20px; /* Asegura espacio con la imagen */
+  }
+  
+  /* Sección de contacto */
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-section li {
+    font-size: 18px;
+    color: #ad1457;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between; /* Asegura que el texto esté a la izquierda y la imagen a la derecha */
+    align-items: center;
+    font-weight: bold; /* Poner la información en negrita */
+  }
+  
+  .contact-section li::before {
+    content: '';
+  }
+  
+  .icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px; /* Mover la imagen a la derecha del texto */
+  }
+
+  .instagram-icon {
+    width: 25px; /* Hacer la imagen de Instagram un poco más ancha */
+    height: 18px;
+  }
+
+  /* Elimina el padding/margen que puede estar afectando el body */
+  body, html {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+  
+    .image-section {
+      position: relative;
+      left: 0;
+      transform: none;
+      margin-bottom: 20px;
+    }
+  
+    .info-section,
+    .contact-section {
+      max-width: 100%;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  

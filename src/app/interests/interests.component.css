@@ -1,0 +1,60 @@
+/* Contenedor principal de intereses */
+.interests-container {
+    width: 50%; /* Ajusta el ancho a tu gusto */
+    margin: 20px auto;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #f48fb1; /* Borde rosa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover en todo el contenedor */
+  .interests-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Título del componente */
+  .interests-container h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d81b60; /* Rosa intenso */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Lista de intereses */
+  .interests-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilo para cada interés */
+  .interest-item {
+    background-color: #fce4ec; /* Fondo rosa claro */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Efecto hover para cada interés */
+  .interest-item:hover {
+    background-color: #f06292; /* Fondo rosa más fuerte */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    color: white; /* Cambia el texto a blanco */
+  }
+  
+  /* Responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .interests-container {
+      width: 90%;
+    }
+  }
+  
