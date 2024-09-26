@@ -1,0 +1,41 @@
+/* Contenedor principal de habilidades */
+.skills-container {
+    width: 40%; /* Ajusta el ancho, puedes cambiar a 50% si lo prefieres más estrecho */
+    margin: 20px auto; /* Centrado */
+    text-align: center;
+  }
+  
+  .skills-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d81b60; /* Color rosa para el título */
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor de las habilidades */
+  .skills {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las habilidades se ajusten en varias filas */
+    justify-content: center;
+    gap: 15px; /* Espacio entre cada habilidad */
+  }
+  
+  /* Estilo para cada badge (etiqueta) de habilidad */
+  .skill-badge {
+    background-color: #f06292; /* Color rosa suave */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto hover para las habilidades */
+  .skill-badge:hover {
+    transform: translateY(-5px); /* Levanta un poco al pasar el ratón */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2
+    ); /* Sombra más pronunciada */  
+  }
